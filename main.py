@@ -109,7 +109,7 @@ for animal in zoo.animals:
 
 print("\nСотрудники зоопарка:")
 for employee in zoo.employees:
-    print(f"- {employee.name}")
+    print(f"- {employee.name} {'(Зоолог)' if isinstance(employee, ZooKeeper) else '(Ветеринар)'}")
 
 # Выводим звуки животных
 print("\nЗвуки животных:")
